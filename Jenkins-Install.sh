@@ -10,6 +10,13 @@
 
 sudo yum install java-1.8.0-openjdk-devel -y
 
+if [ $? -ne 0 ]
+then 
+echo "Installation failed please check the error and try again"
+exit 99
+fi
+
+
 #2 - Enable Jenkins Repositorysudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
 
 sudo yum install wget -y
