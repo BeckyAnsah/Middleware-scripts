@@ -6,24 +6,31 @@
 # This script will provide system inventory information as needed. 
 
 # 1 - Check System Memory Performance
-
+echo "Memory Information"
 free -m 
 
-# 2 - Check CPU information
+sleep 2
 
+# 2 - Check CPU information
+echo "CPU Information"
 nproc
 lscpu
 
-# 3 - Check Hard Drive information
+sleep 2
 
+# 3 - Check Hard Drive information
+echo "Hard Drive Information"
 lsblk
 
-# 4 - Check Kernel information
+sleep 2
 
+# 4 - Check Kernel information
+echo "Kernel Information"
 uname -a 
 
+sleep 2
 
 # 5 - Check OS release/version
-
+echo "OS Information"
 cat /etc/*os-release 
 
