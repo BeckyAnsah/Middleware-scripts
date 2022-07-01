@@ -32,5 +32,5 @@ sleep 2
 
 # 5 - Check OS release/version
 echo "OS Information"
-cat /etc/*os-release 
+cat /etc/*release 
 
